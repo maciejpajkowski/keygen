@@ -32,8 +32,9 @@ const generateStandardKey = () => {
       key = key.join("");
     }
   }
-
-  document.getElementById("keyslot").innerHTML = key;
+  const generatedKey = document.getElementById("keyslot");
+  generatedKey.innerHTML = key;
+  generatedKey.style.color = "black";
 };
 
 const button = document.getElementById("app--generate-key");
