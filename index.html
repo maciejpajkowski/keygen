@@ -10,7 +10,13 @@
 <body>
 	<div id="app">
 		<h1>Key generator</h1>
-		<p>Press the button to generate a new key!</p>
+		<p>Choose which key template suits your needs <br />and press the button to generate a new key!</p>
+		<div class="app-select">
+			<input type="radio" name="keytype" value="key3" checked><span class="input">AAAAA-BBBBB-CCCCC</span><br />
+			<input type="radio" name="keytype" value="key4"><span class="input">AAAAA-BBBBB-CCCCC-DDDDD</span><br />
+			<input type="radio" name="keytype" value="key4"><span class="input">AAAAA-BBBBB-CCCCC-DDDDD-EEEEE</span><br />
+			<br />
+		</div>
 		<button id="app--generate-key">GENERATE KEY</button>
 		<br /><br />
 		<div id="keyslot">Your key will appear here.</div>
